@@ -1,4 +1,10 @@
+p1 {
+  font-size:8px;
+}
+
+
 h1 {
+  font-family: 'Noto Sans JP', sans-serif;
   color: #4CAF50;
 font-size: 50px;
 }
@@ -6,7 +12,7 @@ font-size: 50px;
 body {
 
 background-color: #DCDCDC	;
-padding-left : 100px;
+padding-left : 10px;
 }
 
 button {
