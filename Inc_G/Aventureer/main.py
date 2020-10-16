@@ -35,6 +35,29 @@ def choose_ennemy():
 
 
 
+
+def set_ennemy():
+    new_ennemy = choice(characters)
+    if new_ennemy == hero:
+        set_ennemy()
+    else:
+        return new_ennemy
+characters = [
+    # (self, name, job, hp, defaultHp, atk, res, gold, luck,is_dead):
+    Aventureer("Jolan", "Necromancer", 25, 25, 11, 2, 100, 2, False),
+    Aventureer("Allan", "Rogue", 28, 28, 12, 1, 100, 1, False),
+    Aventureer("Marcus", "Barbarian", 30, 30, 9, 3, 100, 1, False),
+    Aventureer("Arnaud", "Bard", 15, 15, 18, 3, 100, 7, False),
+    Aventureer("Stalin", "Unbending", 25, 25, 15, 3, 100, 5, False),
+    Aventureer("Bastien", "Magicien", 25, 25, 20, 3, 100, 6, False),
+]
+
+intro()
+
+show_characters(characters)
+
+hero = choose_character(characters)
+heel = choose_ennemy()
 def initGame(hero, heel):
     hero.show_stats()
     
@@ -60,28 +83,5 @@ def initGame(hero, heel):
         hero.show_stats()
         hero.attack(heel)
         initGame(hero, heel)
-
-def set_ennemy():
-    new_ennemy = choice(characters)
-    if new_ennemy == hero:
-        set_ennemy()
-    else:
-        return new_ennemy
-characters = [
-    # (self, name, job, hp, defaultHp, atk, res, gold, luck,is_dead):
-    Aventureer("Jolan", "Necromancer", 25, 25, 11, 2, 100, 2, False),
-    Aventureer("Allan", "Rogue", 28, 28, 12, 1, 100, 1, False),
-    Aventureer("Marcus", "Barbarian", 30, 30, 9, 3, 100, 1, False),
-    Aventureer("Arnaud", "Bard", 15, 15, 18, 3, 100, 7, False),
-    Aventureer("Stalin", "Unbending", 25, 25, 15, 3, 100, 5, False),
-    Aventureer("Bastien", "Magicien", 25, 25, 20, 3, 100, 6, False),
-]
-
-intro()
-
-show_characters(characters)
-
-hero = choose_character(characters)
-heel = choose_ennemy()
 
 initGame(hero, heel)
