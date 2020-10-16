@@ -1,0 +1,88 @@
+html {
+    background-image:url("background.jpg");
+    font-family: 'Roboto', sans-serif;
+}
+.scoreCenter {
+    float: left;
+    width:80%;
+}
+.buttonCenter {
+    float:right;
+    width:20%
+}
+.shopButton {
+    background-color: #6b7c8f;
+    transition: all .1s ease-in-out;
+    border-radius: 15px;
+    margin: 10px 10px 10px -10px;
+    
+}
+.shopButton #nameAndCost {
+    margin: 0px;
+    width : 60%;
+}
+.shopButton #image {
+    width : 100%;
+}
+.shopButton:hover {
+    transition: all .1s ease-in-out;
+    background-color: #9ba4ad;
+}
+.scoreContainer {
+    background-color: #6b7c8f;
+    margin:5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    width:38%;
+}
+
+
+.clickerContainer img {
+    position:relative;
+    transition: all .1s ease-in-out; 
+}
+.clickerContainer img:hover { transform: scale(1.05);}
+.clickerContainer img:active { transform: scale(0.99);}
+
+img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:30%;
+}
+
+button {
+    display:inline-block;
+    padding:0.2em 1.45em;
+    margin:0.1em;
+    border:0.15em solid #CCCCCC;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Segoe UI','Roboto',sans-serif;
+    font-weight:400;
+    color:#000000;
+    background-color:#CCCCCC;
+    text-align:center;
+    position:relative;
+    display:block;
+    margin:0.2em auto;
+    font-size: 20px;
+    border-radius:4px;
+    }
+    button:hover{
+    border-color:#7a7a7a;
+    }
+    button:active{
+    background-color:#999999;
+    }
+    @media all and (max-width:30em){
+  
+    }
+
+body {
+    text-align: center;
+    
+    
+
+}

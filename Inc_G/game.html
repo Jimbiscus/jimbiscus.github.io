@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzako Simulator</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class ="sectionLeft">
+        <center>
+            <div class="scoreContainer">
+            <div><strong>SCORE : <span id="score">0</span></strong></div>
+            <span id = "Scps"> 0</span> Dépression par seconde
+        </center>
+        </div>
+    </div>
+    <div class="buttonCenter">
+            <table class="shopButton" onclick="buyPetard()">
+                <tr>
+                    <td id="image"><img src="petard.png"></td>
+                    <td id="nameAndCost">
+                        <p>Pétard</p>
+                        <p><span id="petardPrice">15</span></p>
+                    </td>
+                    <td id="amount"><span id="petards">0</span> Pétards</td>
+                </tr>
+            </table>
+            <table class="shopButton" onclick="buyHero()">
+                <tr>
+                    <td id="image"><img src="petard.png"></td>
+                    <td id="nameAndCost">
+                        <p>Héroine</p>
+                        <p><span id="heroPrice">50</span></p>
+                    </td>
+                    <td id="amount"><span id="hero">0</span> Héroine</td>
+                </tr>
+            </table>
+    </div>
+    <br>
+    <div class="clickerContainer">
+    <img src="ashtray.png" onclick="addToScore(1)"/>
+    </div>
+
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
