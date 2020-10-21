@@ -12,6 +12,9 @@ body {
   background-color: #DCDCDC	;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
   }
 
 
@@ -21,31 +24,21 @@ body {
   width: 100%;
   padding-top:8px;
   padding-bottom:14px;
-  background-color: #404253;
+  background-color: #222222;
+  border-style: solid;
+  border-color: rgb(146, 104, 33);
+  margin-bottom:1px;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-a:link{
+.navbar a:link{
   text-decoration:none;
-  color:#ABB2F0;
+  color:#dd993f;
 }
-a:visited{
+.navbar a:visited{
   text-decoration: none;
-  color: #ABB2F0;
-}
-h1 {
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #4CAF50;
-font-size: 50px;
+  color: #dd993f;
 }
 
-button { 
-  background-image: url( "nightmode.png"); 
-  
-  background-size: cover; 
-  width: 50spx; 
-  height: 30px; 
-  font-size: 24px; 
-} 
